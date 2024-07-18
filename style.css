@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body,html{
+    height: 100%;
+}
+
+/* for calculator */
+form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+input[name="display"] {
+    height: 60px;
+    border-radius: 8px;
+    margin: 5px;
+    border: none;
+    width: calc(100% - 30px);
+    background-color: #000;
+    text-align: right;
+    font-size: x-large;
+    padding: 0 10px;
+    color: #fff;
+}
+
+input[type="button"] {
+    float: left;
+    width: calc(100% / 4 - 6.5px);
+    background-color: #252525;
+    color: #fff;
+    border-radius: 50%;
+    height: 56px;
+    border: none;
+    font-size: larger;
+    text-align: center;
+    margin:0 0 5px 5px;
+}
+
+input[type="button"]:nth-last-of-type(1) {
+    background-color: rgb(30, 168, 30);
+    width: 112px;
+    border-radius: 15px;
+    font-size: xx-large;
+}
+
+input[type="button"]:hover {
+    background: #141414;
+    font-size: large;
+    transition: 300ms;
+}
+
+input[type="button"]:nth-last-of-type(1):hover {
+    background-color: rgb(30, 168, 30);
+    font-size: x-large ;
+}
+
+/* footer */
+footer div {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    padding-left: 5px;
+    width: 180px;
+    height: 60px;
+    background-color: #252525;
+    align-content: center;
+    border-radius: 12px;
+    transition: 300ms;
+}
+
+footer div:hover {
+    border-radius: 1rem;
+    box-shadow: 5px 5px 6px rgb(100, 100, 100);
+
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
