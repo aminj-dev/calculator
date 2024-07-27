@@ -5,7 +5,7 @@ function data(value) {
     let displayValue = calc.display.value;
     if(displayValue === "0"&& value === "0") calc.display.value = "";
     if(displayValue  === "0"&& value !== "0" && value !== ".") calc.display.value = value;
-    else calc.display.value += value;    
+    else calc.display.value += value;
 }
 
 //clear all in display
@@ -19,7 +19,11 @@ function c() {
 }
 
 function equal() {
-    if(calc.display.value !== "") calc.display.value = eval(calc.display.value);
+    try{
+        if(calc.display.value !== "") calc.display.value = eval(calc.display.value);
+    } catch(error) {
+        calc.display.value = error.message;
+    }
 }
 
 //go to gitHub profile link in new tab
