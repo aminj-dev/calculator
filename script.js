@@ -23,6 +23,7 @@ function equal() {
         if(calc.display.value !== "") calc.display.value = eval(calc.display.value);
     } catch(error) {
         calc.display.value = error.message;
+        const useAc = setTimeout(ac, 400);
     }
 }
 
